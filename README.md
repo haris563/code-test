@@ -1,5 +1,7 @@
 # Digital Renaissance Code Test
 
+_Currently we have stopped taking in new applicants. You can still send in a code test for when a position opens up again_
+
 I'm Luuk, Chief Technology Officer at [Digital Renaissance](https://thedigitalrenaissance.io/team).
 
 I wrote this test to get a sense of your:

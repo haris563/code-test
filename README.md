@@ -67,3 +67,7 @@ Thank you for giving this test a try, I am open to hear your feedback on it. If 
    - Add a button on each table row, used to delete the transaction
    - Update the transaction in the Redux store with the API response
    - Do not render the transaction in the table when `deleted === true`
+
+5. **Submit**
+
+   Submit your recording and link to your public repository fork to luuk@thedigitalrenaissance.io

@@ -41,7 +41,7 @@ async function getResult(
     ];
   }
 
-  if (!user) return null;
+  // if (!user) return null;
 
   if (url.indexOf('/transactions/delete/') === 0) {
     return {

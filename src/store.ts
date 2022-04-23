@@ -12,9 +12,32 @@ export const { actions, reducer } = createSlice({
   name: 'store',
   initialState,
   reducers: {
-    set: (state, action: PayloadAction<Partial<State>>) => ({ ...state, ...action.payload })
+    set: (state, action: PayloadAction<Partial<State>>) => ({ ...state, ...action.payload }),
     // TODO: Write this reducer
-    // addTransactions:
+    addTransactions: (state, action: PayloadAction<Partial<State>>) => {
+      return {
+        ...state,
+        transactions: {
+          ...state.transactions,
+          ...action.payload.transactions
+        }
+      }
+    },
+    removeTransactions: (state, action: PayloadAction<Partial<State>>) => {
+      return {
+        ...state,
+        transactions: {}
+      }
+    },
+
+    deleteTransaction:(state, action) => {
+      return {
+        ...state,
+        transactions: {
+          ...action.payload.transactions
+        }
+      }
+    }
   }
 });
 

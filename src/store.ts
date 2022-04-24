@@ -30,7 +30,7 @@ export const { actions, reducer } = createSlice({
       }
     },
 
-    deleteTransaction:(state, action) => {
+    deleteTransaction:(state, action:PayloadAction<Partial<State>>) => {
       return {
         ...state,
         transactions: {

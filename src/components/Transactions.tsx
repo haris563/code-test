@@ -29,9 +29,12 @@ function Transactions() {
     const deleteHandler = async (id:string) => {
         const data = await deleteTranscation(id)
         if(data.id) {
-            let filteredTransactions = Object.values(transactions).filter((item)=>item.id !== data.id )
-            console.log(filteredTransactions)
-            dispatch(actions.deleteTransaction({transactions:filteredTransactions}));
+            let trans = {...transactions}
+            delete trans[id]
+            console.log(trans)
+            // let filteredTransactions = Object.values(transactions).filter((item)=>item.id !== data.id )
+            // console.log(filteredTransactions)
+            dispatch(actions.deleteTransaction({transactions:trans}));
         }
         
     }
